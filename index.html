@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hapvida & Notredame</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Estilos/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="imagens/HAPV3.SA-92fa555b.png" type="image/png">
 </head>
 <body>
     <nav class="navbar">
-        <img src="imagens/hapvida-logo.png" alt="" class="img-logo">
+        <img src="imagens/logo-hapvida-NotreDame-Intermedica.png" alt="" class="img-logo">
         <ul class="nav-list">
             <li class="nav-menu"><a href="#intro">Abertura de Impacto</a></li>
             <li class="nav-menu"><a href="#problema">Problema & Solução</a></li>
-            <li class="nav-menu"><a href="#">Demonstração</a></li>
-            <li class="nav-menu"><a href="#">Contato</a></li>
+            <li class="nav-menu"><a href="#demonstraçao">Demonstração</a></li>
+            <li class="nav-menu"><a href="#contato">Contato</a></li>
         </ul>
     </nav>
 
@@ -32,7 +34,7 @@
         </div>
 
         <div class="banner-img">
-            <img src="imagens/trafalgar-header illustration 1.svg" alt="" class="banner-img">
+            <img src="imagens/trafalgar-header illustration 1.png" alt="" class="img">
         </div>
     </section>
 
@@ -42,6 +44,9 @@
 
             <div class="intro-txt">
                 <h2 class="h2">Abertura de Impacto</h2>
+
+                <div class="barra"></div>
+
                 <p class="text">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque quos itaque at numquam fuga labore quod id exercitationem deleniti quaerat quas omnis quo reprehenderit provident qui et recusandae, aliquid molestias.
                 </p>
@@ -53,11 +58,14 @@
 
     <section id="problema">
         <div class="problema-img">
-            <img src="imagens/trafalgar-illustration sec02 1.svg" alt="">
+            <img src="imagens/trafalgar-illustration sec02 1.svg" alt="" class="img">
         </div>
 
         <div class="problema-txt">
             <h2 class="h2">Problema e Solução</h2>
+
+            <div class="barra"></div>
+
             <p class="text">
                 Trafalgar provides progressive, and affordable healthcare, accessible on mobile and online for everyone. To us, its not just work. We take pride 
                 in the solutions we deliver
@@ -70,6 +78,117 @@
             <button class="problema-button">Saiba Mais</button>
         </div>
     </section>
-    
+
+    <section id="cards-problema">
+        <div class="cards-title">
+            <h2 class="">Problemas Identificados</h2>
+            <div class="barra"></div>
+            <p class="">We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
+        </div>
+
+        <div class="cards-container">
+            <div class="card">
+                <img src="imagens/Frame.png" alt="" class="card-img">
+                <h3>Search doctor</h3>
+                <p>Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/Frame (1).png" alt="" class="card-img">
+                <h3>Search doctor</h3>
+                <p>Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
+            </div>
+
+            <div class="card">
+                <img src="imagens/Frame (2).png" alt="" class="card-img">
+                <h3>Search doctor</h3>
+                <p>Choose your doctor from thousands of specialist, general, and trusted hospitals</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="demonstraçao">
+        <div class="demonstracao-txt">
+            <h2 class="h2">
+                Dowload our mobile apps
+            </h2>
+
+            <div class="barra"></div>
+
+            <p class="text">
+                Our dedicated patient engagement app and 
+                web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely
+            </p>
+            <a href="project.html">
+                <button class="problema-button">Saiba Mais</button>
+            </a>
+        </div>
+
+        <div class="demonstracao-img">
+            <img src="imagens/trafalgar-illustration sec03 1.svg" alt="" class="img"> 
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="contato-title">
+            <h2 class="">Entre em Contato!</h2>
+            <div class="barra"></div>
+            <p class="">We provide to you the best choiches for you. Adjust it to your health needs and make sure your undergo treatment with our highly qualified doctors you can consult with us which type of service is suitable for your health</p>
+        </div>
+
+        <form>
+            <div class="input">
+                <img src="imagens/do-utilizador (2).png" alt="" class="form-img">
+                <div class="label-input">
+                    <label for="">Nome</label>
+                    <input type="text" id="input-nome" placeholder="Nome completo">
+                </div>
+                
+            </div>
+
+            <div class="input">
+                <img src="imagens/o-email (1).png" alt="" class="form-img">
+                <div class="label-input">
+                    <label for="">E-mail</label>
+                    <input type="email" id="input-email" placeholder="Seu melhor email">
+                </div>
+                
+            </div>
+
+            <button type="button" class="form-button">Fazer parte</button>
+
+            <div class="resposta"></div>
+        </form>
+    </section>
+
+    <footer>
+        <div id="footer-container">
+            <div id="footer-logo">
+                <img src="imagens/logo-hapvida-NotreDame-Intermedica.png" alt="" class="img-logo">
+                <p>Tranformando a vida mais saudável!</p>
+                <p>All Rights Reserved</p>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Info</h3>
+                </li>
+                <li><a href="#" class="footer-links">Contact us</a></li>
+                <li><a href="#" class="footer-links">Privacy Policies</a></li>
+                <li><a href="#" class="footer-links">Terms & Conditions</a></li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Company</h3>
+                </li>
+                <li><a href="#" class="footer-links">Help</a></li>
+                <li><a href="#" class="footer-links">Careers</a></li>
+                <li><a href="#" class="footer-links">About</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="JS/index.js"></script>
 </body>
 </html>

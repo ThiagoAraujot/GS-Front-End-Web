@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrevenCare</title>
+    <link rel="stylesheet" href="Estilos/project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="shortcut icon" href="imagens/HAPV3.SA-92fa555b.png" type="image/png">
+</head>
+<body>
+    <nav class="navbar">
+        <img src="imagens/logo-hapvida-NotreDame-Intermedica.png" alt="" class="img-logo">
+        <ul class="nav-list">
+            <li class="nav-menu"><a href="#exames">Exames</a></li>
+            <li class="nav-menu"><a href="#agendamentos">Agendamentos</a></li>
+            <li class="nav-menu"><a href="#">Meu Plano</a></li>
+        </ul>
+    </nav>
+
+    <section id="exames">
+        <div class="title">
+            <h1 class="h1">Seja Bem-vindo (a)</h2>
+
+            <div class="barra"></div>
+
+            <p class="text">
+                Aqui é onde será monitorado todos os seus exames, onde você pode agendar novos procedimentos e ainda visualiza-los, basta selecionar o exame desejado e em seguida clicar em "Agendar exame", todos eles estarão na aba "Agendamentos" logo acima. Lembrando que você tem até 8 meses para completar esses exames sem sofrer reajuste de custo.
+            </p>
+        </div>
+
+        <div class="exames-container">
+            <div class="card">
+                <div class="input-container">
+                    <input type="checkbox" name="sanguinio" data-btn-id="btn-agendar-1" class="input-checkbox">
+                    <h2>Exame de Sangue</h2>
+                </div>
+                <button id="btn-agendar-1" class="display-none"><a href="#form-agendar">Agendar</a></button>
+            </div>
+        
+            <div class="card">
+                <div class="input-container">
+                    <input type="checkbox" name="sanguinio" data-btn-id="btn-agendar-2" class="input-checkbox">
+                    <h2>Hemograma</h2>
+                </div>
+                <button id="btn-agendar-2" class="display-none"><a href="#form-agendar">Agendar</a></button>
+            </div>
+
+            <div class="card">
+                <div class="input-container">
+                    <input type="checkbox" name="sanguinio" data-btn-id="btn-agendar-3" class="input-checkbox">
+                    <h2>Exame de Urina</h2>
+                </div>
+                <button id="btn-agendar-3" class="display-none"><a href="#form-agendar">Agendar</a></button>
+            </div>
+
+            <div class="card">
+                <div class="input-container">
+                    <input type="checkbox" name="sanguinio" data-btn-id="btn-agendar-4" class="input-checkbox">
+                    <h2>Exame de Fezes</h2>
+                </div>
+                <button id="btn-agendar-4" class="display-none"><a href="#form-agendar">Agendar</a></button>
+            </div>
+
+            <div class="card">
+                <div class="input-container">
+                    <input type="checkbox" name="sanguinio" data-btn-id="btn-agendar-5" class="input-checkbox">
+                    <h2>Mamografia</h2>
+                </div>
+                <button id="btn-agendar-5" class="display-none"><a href="#form-agendar">Agendar</a></button>
+            </div>
+
+            <div class="card">
+                <div class="input-container">
+                    <input type="checkbox" name="sanguinio" data-btn-id="btn-agendar-6" class="input-checkbox">
+                    <h2>Ureia e Creatina</h2>
+                </div>
+                <button id="btn-agendar-6" class="display-none"><a href="#form-agendar">Agendar</a></button>
+            </div>
+
+            <div class="card">
+                <div class="input-container">
+                    <input type="checkbox" name="sanguinio" data-btn-id="btn-agendar-7" class="input-checkbox">
+                    <h2>Eletrocardiograma</h2>
+                </div>
+                <button id="btn-agendar-7" class="display-none"><a href="#form-agendar">Agendar</a></button>
+            </div>
+
+            <div class="card">
+                <div class="input-container">
+                    <input type="checkbox" name="sanguinio" data-btn-id="btn-agendar-8" class="input-checkbox">
+                    <h2>Ecocardiograma</h2>
+                </div>
+                <button id="btn-agendar-8" class="display-none"><a href="#form-agendar">Agendar</a></button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="form-agendar">
+        <div class="title-agendar">
+            <h3 class="h3">Agende seu Exame</h3>
+            <p>Rápido e Fácil</p>
+        </div>
+        
+        <form>
+            <div class="input">
+                <img src="imagens/do-utilizador (2).png" alt="" class="form-img">
+                <div class="label-input">
+                    <label class="label-cpf" for="">CPF</label>
+                    <input type="number" id="input-cpf" placeholder="123.456.789-0" required>
+                </div>
+            </div>
+
+            <div class="input">
+                <img src="imagens/telefone.png" alt="" class="form-img">
+                <div class="label-input">
+                    <label class="label-cell" for="">Celular</label>
+                    <input type="number" id="input-cell" placeholder="+DDD XXXX-XXXX" required>
+                </div>
+            </div>
+
+            <div class="input">
+                <img src="imagens/teste-de-sangue.png" alt="" class="form-img">
+                <div class="label-input">
+                    <label for="">Selecione o exame desejado</label>
+                    <select name="" id="select-exames" required>
+                        <option value=""></option>
+                        <option value="Exame de Sangue">Exame de sangue</option>
+                        <option value="Hemograma">Hemograma</option>
+                        <option value="Exame de Urina">Exame de Urina</option>
+                        <option value="Exame de Fezes">Exame de Fezes</option>
+                        <option value="Mamografia">Mamografia</option>
+                        <option value="Ureia e Creatina">Ureia e Creatina</option>
+                        <option value="Eletrocardiograma">Eletrocardiograma</option>
+                        <option value="Ecocardiograma">Ecocardiograma</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input">
+                <img src="imagens/calendario (1).png" alt="" class="form-img">
+                <div class="label-input">
+                    <label for="">Data</label>
+                    <input type="date" id="input-data" required>
+                </div>
+            </div>
+
+            <div class="input">
+                <img src="imagens/relogio.png" alt="" class="form-img">
+                <div class="label-input">
+                    <label for="">Horário</label>
+                    <input type="time" id="input-data" required>
+                </div>
+            </div>
+
+            <a href="#agendamentos">
+                <button type="button" class="form-button">Agendar</button>
+            </a>
+
+            <div class="resposta"></div>
+        </form>   
+    </section>
+
+    <section id="agendamentos">
+        <div class="title-agendar">
+            <h3 class="h3">Agendamentos</h3>
+            <p>Aqui estarão todos os seus exames</p>
+        </div>
+
+        <div id="exame-agendado">
+
+        </div>
+    </section>
+
+
+    <script src="JS/project.js"></script>
+</body>
+</html>

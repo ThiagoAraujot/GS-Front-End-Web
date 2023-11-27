@@ -1,0 +1,283 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgb(152, 152, 152);        
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #458FF6;    
+    border-radius: 20px;      
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.barra {
+    width: 56px;
+    border-bottom: 2px solid #fff;
+}
+
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1em;
+    background-color: #fff;
+} 
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    gap: 5em;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    color: grey;
+}
+
+.nav-menu a:hover {
+    font-weight: 600;
+    color: #2F6ABC;
+}
+
+.img-logo {
+    width: 250px;
+}
+
+/* MAIN */
+
+section#exames{
+    /*background: linear-gradient(117deg, #6CC5D9 1.3%, #6CC5D9 48.79%, #1B65A6 100%);*/
+    background-color: #2F6ABC;
+}
+
+div.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding-top: 1em;
+}
+
+.h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+}
+
+.text {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 900px;
+    color: #fff;
+}  
+
+.exames-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    padding: 2em;
+}
+
+.input-container {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 1.5em;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.265);
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+}
+
+.display-none {
+    display: none;
+}
+
+.display-block-btn {
+    display: block;
+    width: 80px;
+    font-size: 1em;
+    background-color: #458FF6;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.315);
+}
+
+.display-block-btn:active {
+    transition: .2s;
+    scale: 0.95;
+}
+
+input[type=checkbox] {
+    margin-right: 8px;
+}
+
+/* FORM AGENDAR */
+
+section.form-agendar {
+    background-color: #fff;
+}
+
+.h3 {
+    padding-top: 1em;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-agendar p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgb(118, 118, 118);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding-top: 3em;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+}
+
+.input input {
+    padding: 0.6em;
+    font-size: 1em;
+    border-radius: 12px;
+    border: 1px solid rgb(187, 187, 187);
+    width: 500px;
+}
+
+.input select {
+    padding: 0.6em;
+    font-size: 1em;
+    border-radius: 12px;
+    border: 1px solid rgb(187, 187, 187);
+    width: 500px;
+}
+
+.form-img {
+    padding: 0 1em;
+    position: relative;
+    top: 10px;
+}
+
+.label-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.label-input label {
+    margin-left: 6px;
+}
+
+.form-button {
+    padding: 0 5em;
+    margin-left: 60px;
+    border-radius: 55px;
+    border: 1.4px solid #458FF6;
+    background-color: transparent;
+    cursor: pointer;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0em;
+    color: #458FF6;
+}
+
+.form-button:hover {
+    background-color: #458FF6;
+    box-shadow: 0px 0px 15px #458ff6bd;
+    color: #fff;
+    transition: .3s;
+}
+
+.form-button:active {
+    scale: 0.95;
+}
+
+.resposta {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+.invalido {
+    color: red;
+}
+
+.valido {
+    color: green;
+}
+
+/* AGENDAMENTO */ 
+
+#exame-agendado {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+    padding: 2em;
+}
