@@ -13,6 +13,7 @@ html {
 body {
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -35,6 +36,39 @@ a {
 .barra {
     width: 56px;
     border-bottom: 2px solid black;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+        /*transform: translate3d(0, -50px, 0);*/
+    }
+
+    to{
+        opacity: 1;
+        /*transform: translate3d(0, 0, 0);*/
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1.5s ease-in;
+}
+
+
+@keyframes fadeLeft {
+    from{
+        opacity: 0;
+        transform: translate3d(100px, 0, 0);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeLeft {
+    animation: fadeLeft 1s ease-in;
 }
 
 
@@ -223,6 +257,7 @@ section#problema {
 }
 
 .text {
+    display: block;
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
@@ -254,6 +289,10 @@ section#problema {
 
 .problema-button:active {
     scale: 0.95;
+}
+
+.display-none {
+    display: none;
 }
 
 /* CARDS PROBLEMA */ 
@@ -387,6 +426,7 @@ section#contato {
     letter-spacing: 0em;
 }
 
+
 form {
     display: flex;
     flex-direction: column;
@@ -455,6 +495,39 @@ form {
     margin: 0 auto;
     font-weight: 600;
     font-size: 1.1em;
+}
+
+/* TEAM */
+
+#table-team{
+    margin: 0 auto;
+    padding: 2em;
+}
+
+th {
+    padding: 1em;
+    background-color: #458FF6;
+    color: #fff;
+}
+
+.table-img {
+    width: 300px;
+}
+
+#table-team p {
+    width: 500px;
+    font-size: 1.5em;
+    text-align: justify;
+    color: rgb(120, 120, 120);
+    padding: 1em;
+}
+
+td.descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
 }
 
 /* FOOTER */

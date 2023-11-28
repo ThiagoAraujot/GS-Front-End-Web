@@ -1,7 +1,16 @@
 const nome = document.querySelector("#input-nome");
 const email = document.querySelector("#input-email");
-const botao = document.querySelector(".form-button")
-const resp = document.querySelector(".resposta")
+const botao = document.querySelector(".form-button");
+const resp = document.querySelector(".resposta");
+const btn_problema = document.querySelector(".problema-button");
+const text = document.querySelector(".display-none");
+
+btn_problema.addEventListener("click", function() {
+    text.classList.toggle("display-none");
+    text.classList.toggle("text");
+});
+
+
 
 botao.addEventListener("click", registerUser)
 
@@ -32,3 +41,25 @@ function clearForms() {
     nome.value = ""
     email.value = ""
 }
+
+/* SCRIPT KEYFRAMES */
+
+function aplicarAnimacaoNaSecao(secaoId, animacaoClass) {
+    const secaoParaAnimar = document.getElementById(secaoId);
+    if (!secaoParaAnimar) return; 
+
+    const secaoParaAnimarPosicao = secaoParaAnimar.getBoundingClientRect();
+
+    if (secaoParaAnimarPosicao.top < window.innerHeight && secaoParaAnimarPosicao.bottom >= 0) {
+        secaoParaAnimar.classList.add(animacaoClass);
+    } else {
+        secaoParaAnimar.classList.remove(animacaoClass);
+    }
+}
+
+window.addEventListener('scroll', function () {
+    aplicarAnimacaoNaSecao('intro', 'fadeIn');
+    aplicarAnimacaoNaSecao('img1', 'fadeLeft');
+    aplicarAnimacaoNaSecao('cards-problema', 'fadeIn');
+    aplicarAnimacaoNaSecao('img2', 'fadeLeft');
+});
