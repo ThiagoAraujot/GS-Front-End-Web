@@ -20,7 +20,7 @@ checkboxes.forEach(function(checkbox) {
 
 cpf.addEventListener("keyup", VerificaCPF)
 function VerificaCPF() {
-    if (cpf.value.length != 10) {
+    if (cpf.value.length != 11) {
         label_cpf.setAttribute("class", "invalido")
         label_cpf.innerHTML = "CPF Inválido"
     } else {
