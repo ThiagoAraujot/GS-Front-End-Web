@@ -2,11 +2,12 @@ const checkboxes = document.querySelectorAll('input[type="checkbox"]');
 const btnAgendar = document.querySelector(".form-button");
 const exameAgendado = document.querySelector("#exame-agendado");
 const selectElement = document.querySelector("#select-exames");
-const data = document.querySelector("#input-data")
-const cpf = document.querySelector("#input-cpf")
-const label_cpf = document.querySelector(".label-cpf")
-const cell = document.querySelector("#input-cell")
-const label_cell = document.querySelector(".label-cell")
+const data = document.querySelector("#input-data");
+const cpf = document.querySelector("#input-cpf");
+const label_cpf = document.querySelector(".label-cpf");
+const cell = document.querySelector("#input-cell");
+const label_cell = document.querySelector(".label-cell");
+const time = document.querySelector("#input-time");
 
 checkboxes.forEach(function(checkbox) {
     checkbox.addEventListener('change', function() {
@@ -40,8 +41,6 @@ function VerificaCell() {
     }
 }
 
-
-
 btnAgendar.addEventListener("click", GerarAgendamento) 
 function GerarAgendamento() {
     let selectedIndex = selectElement.selectedIndex;
@@ -54,6 +53,9 @@ function GerarAgendamento() {
             <input type="checkbox" name="sanguinio" data-btn-id="btn-agendar-1" class="input-checkbox">
             <h2>${selectedText}</h2>
         </div>
-        <p>${data.value}</p>
+        <div class="infos">
+            <p id="data">${data.value}</p>
+            <p id="time">${time.value}</p>
+        </div>
     </div>`
 }

@@ -17,7 +17,7 @@
         <ul class="nav-list">
             <li class="nav-menu"><a href="#exames">Exames</a></li>
             <li class="nav-menu"><a href="#agendamentos">Agendamentos</a></li>
-            <li class="nav-menu"><a href="#">Meu Plano</a></li>
+            <li class="nav-menu"><a href="#planos">Meu Plano</a></li>
         </ul>
     </nav>
 
@@ -28,7 +28,7 @@
             <div class="barra"></div>
 
             <p class="text">
-                Aqui é onde será monitorado todos os seus exames, onde você pode agendar novos procedimentos e ainda visualiza-los, basta selecionar o exame desejado e em seguida clicar em "Agendar exame", todos eles estarão na aba "Agendamentos" logo acima. Lembrando que você tem até 8 meses para completar esses exames sem sofrer reajuste de custo.
+                Aqui é onde será monitorado todos os seus exames, onde você pode agendar novos procedimentos e ainda visualiza-los, basta selecionar o exame desejado e em seguida clicar em "Agendar", todos eles estarão na aba "Agendamentos" logo acima. Lembrando que você tem até 8 meses para completar esses exames sem sofrer reajuste de custos.
             </p>
         </div>
 
@@ -152,7 +152,7 @@
                 <img src="imagens/relogio.png" alt="" class="form-img">
                 <div class="label-input">
                     <label for="">Horário</label>
-                    <input type="time" id="input-data" required>
+                    <input type="time" id="input-time" required>
                 </div>
             </div>
 
@@ -174,6 +174,43 @@
 
         </div>
     </section>
+
+    <section id="planos">
+        <div class="title-agendar">
+            <h3 class="h3">Meu Plano</h3>
+            <p>Planos disponíveis</p>
+        </div>
+        <div class="plans-container">
+            <div class="plan-card">
+                <h3 class="plan-title">Gold</h3>
+                <h4 class="price">$199.99</h4>
+                <p class="benefits">Atendimento na sua Cidade</p>
+                <p class="benefits">Limite de 3 reembolsos mensais</p>
+                <p class="benefits">Desconto de 15% em medicamentos</p>
+                <button class="plan-btn">Saiba mais</button>
+            </div>
+    
+            <div class="plan-card" id="plan-focus">
+                <h3 class="plan-title">Platinum</h3>
+                <h4 class="price">$199.99</h4>
+                <p class="benefits">Atendimento no seu Estado</p>
+                <p class="benefits">Limite de 5 reembolsos mensais</p>
+                <p class="benefits">Desconto de 20% em medicamentos</p>
+                <button class="plan-btn">Saiba mais</button>
+            </div>
+    
+            <div class="plan-card">
+                <h3 class="plan-title">Diamond</h3>
+                <h4 class="price">$199.99</h4>
+                <p class="benefits">Atendimento em todo o Brasil</p>
+                <p class="benefits">Limite de 10 reembolsos mensais</p>
+                <p class="benefits">Desconto de 30% em medicamentos</p>
+                <button class="plan-btn">Saiba mais</button>
+            </div>
+        </div>
+    </section>
+
+    <a href="index.html" id="comeback">Voltar para o site original</a>
 
 
     <script src="JS/project.js"></script>
