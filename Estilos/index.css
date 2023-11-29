@@ -510,8 +510,12 @@ th {
     color: #fff;
 }
 
-.table-img {
-    width: 300px;
+.table-img1 {
+    width: 310px;
+}
+
+.table-img2 {
+    width: 400px;
 }
 
 #table-team p {
