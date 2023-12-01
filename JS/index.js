@@ -11,7 +11,6 @@ btn_problema.addEventListener("click", function() {
 });
 
 
-
 botao.addEventListener("click", registerUser)
 
 function registerUser() {
@@ -26,13 +25,13 @@ function registerUser() {
 }
 
 function verifyName() {
-    if (nome.value != "" && nome.value.length > 5) {
+    if (nome.value.length > 5) {
         return true
     }
 }
 
 function verifyEmail() {
-    if (email.value.includes('@') && email.value != "") {
+    if (email.value.includes('@')) {
         return true
     }
 }

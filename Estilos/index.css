@@ -372,6 +372,44 @@ section#cards-problema {
     color: #7D7987;
 }
 
+/* GRAFICOS */
+
+.grafic {
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+}
+
+.grafic-txt {
+    display: flex;
+    flex-direction: column;
+}
+
+.grafic-txt h3 {
+    width: 450px;
+    line-height: 30px;
+}
+
+.grafico-img {
+    width: 400px;
+}
+
+#grafic2 {
+    width: 500px;
+}
+
+.grafico-img2 {
+    width: 500px;
+}
+
+.legenda-grafica {
+    display: flex;
+    gap: 1em;
+    padding: 1em 0;
+}
+
 /* DEMONSTRACAO */
 
 section#demonstraçao {
