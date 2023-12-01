@@ -55,6 +55,7 @@ function GerarAgendamento() {
         <p>Por favor preencha com seus dados!</p>
         `
     } else {
+        resposta.innerHTML = ``
         exameAgendado.innerHTML += `
             <div class="card">
                 <div class="input-container">
