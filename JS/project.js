@@ -3,6 +3,7 @@ const btnAgendar = document.querySelector(".form-button");
 const exameAgendado = document.querySelector("#exame-agendado");
 const selectElement = document.querySelector("#select-exames");
 const data = document.querySelector("#input-data");
+const resposta = document.querySelector(".resposta")
 const cpf = document.querySelector("#input-cpf");
 const label_cpf = document.querySelector(".label-cpf");
 const cell = document.querySelector("#input-cell");
@@ -27,6 +28,7 @@ function VerificaCPF() {
     } else {
         label_cpf.innerHTML = "CPF Válido"
         label_cpf.setAttribute("class", "valido")
+        return true
     }
 }
 
@@ -38,6 +40,7 @@ function VerificaCell() {
     } else {
         label_cell.innerHTML = "Celular Válido"
         label_cell.setAttribute("class", "valido")
+        return true
     }
 }
 
@@ -47,15 +50,23 @@ function GerarAgendamento() {
     let selectedOption = selectElement.options[selectedIndex];
     let selectedText = selectedOption.text;
 
-    exameAgendado.innerHTML += `
-    <div class="card">
-        <div class="input-container">
-            <input type="checkbox" name="sanguinio" data-btn-id="btn-agendar-1" class="input-checkbox">
-            <h2>${selectedText}</h2>
-        </div>
-        <div class="infos">
-            <p id="data">${data.value}</p>
-            <p id="time">${time.value}</p>
-        </div>
-    </div>`
+    if (selectElement.value == "") {
+        resposta.innerHTML = `
+        <p>Por favor preencha com seus dados!</p>
+        `
+    } else {
+        exameAgendado.innerHTML += `
+            <div class="card">
+                <div class="input-container">
+                    <input type="checkbox" name="sanguinio" data-btn-id="btn-agendar-1" class="input-checkbox">
+                    <h2>${selectedText}</h2>
+                </div>
+                <div class="infos">
+                    <p id="data">${data.value}</p>
+                    <p id="time">${time.value}</p>
+                </div>
+            </div>`
+    }
+
+    
 }
